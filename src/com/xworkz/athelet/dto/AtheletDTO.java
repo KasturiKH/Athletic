@@ -2,8 +2,6 @@ package com.xworkz.athelet.dto;
 
 import java.io.Serializable;
 
-
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -31,5 +29,11 @@ public class AtheletDTO implements Serializable {
 	private int totalMedals;
 	private String fit;
 	private double salary;
+	
+	}
 
-}
+	
+
+
+
+	

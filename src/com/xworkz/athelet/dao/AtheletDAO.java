@@ -12,12 +12,37 @@ public interface AtheletDAO {
 		return null;
 	}
 	
-	AtheletDTO findByNameAndId(String name,int id);
+	default AtheletDTO findByNameAndId(String name, int id) 
+	{
+		return null;
+	}
+
+	default AtheletDTO findByNameAndSports(String name, String sports) 
+	{
+		return null;
+	}
 	
-	AtheletDTO findByNameAndSports(String name,String sports);
-	
-	AtheletDTO findByNameAndCountryAndSports(String name,String country,String sports);
+	default String findCoachNameByNameAndCountryAndSports(String coachName, String name, String country,
+			String sports) 
+	{
+		return null;
+	}
+
+	default AtheletDTO findByNameAndCountryAndSports(String name, String country, String sports) 
+	{
+		return null;
+	}
+
+	default String findNameById(String name,int id) 
+	{
+		return null;
+	}
+
+	default int id(int id) 
+	{
+		return 0;
 	
 	
 
+}
 }
